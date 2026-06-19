@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fathurdkk Portfolio</title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet"
+href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<div id="loader">
+    <h1>Welcome To My Website</h1>
+</div>
+<div id="particles"></div>
+
+<button id="themeToggle">
+🌙
+</button>
+
+<header class="hero glass">
+
+<img src="profil.png" class="profile">
+
+<h1>Fathurrohman Hakiki</h1>
+
+<p>
+<span id="typing"></span>
+<span class="cursor">|</span>
+</p>
+
+<div class="hero-buttons">
+<a href="#contact" class="btn btn2">
+Contact Me
+</a>
+
+</div>
+
+<div class="stats">
+
+<div class="stat-card glass">
+<h2>10+</h2>
+<p>Project</p>
+</div>
+
+<div class="stat-card glass">
+<h2>5+</h2>
+<p>Tahun Belajar Elektronika & Programming</p>
+</div>
+
+<div class="stat-card glass">
+<h2>100+</h2>
+<p>Jam Eksperimen</p>
+</div>
+
+</div>
+
+</header>
+
+
+<section class="glass" data-aos="fade-up">
+
+<h2>About Me</h2>
+
+<p>
+
+Halo, saya Fathur Hakiki.
+Saya memiliki ketertarikan di bidang elektronika,
+IoT dan modifikasi sepeda motor.
+
+Saya senang membuat berbagai proyek
+berbasis NodeMCU, ESP32, Arduino,
+serta mempelajari sistem kelistrikan kendaraan.
+
+</p>
+
+</section>
+
+
+<section class="glass" data-aos="fade-right">
+
+<h2>Experience</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+  <h3>2020</h3>
+  <p>Mulai mengenal Python dan dasar logika pemrograman.</p>
+</div>
+<div class="timeline-item">
+  <h3>2021-2023</h3>
+  <p>Belajar HTML, CSS, JavaScript, dan PHP untuk membangun website.</p>
+</div>
+<div class="timeline-item">
+  <h3>2024</h3>
+  <p>Mulai mempelajari AI, prompt engineering, dan cara kerja model AI.</p>
+</div>
+<div class="timeline-item">
+  <h3>2025-2026</h3>
+  <p>Fokus ke hardware: Arduino, NodeMCU, relay, dan sistem IoT.</p>
+</div>
+</div>
+
+</section>
+
+
+<section class="glass" data-aos="fade-up">
+
+<h2>Skill Overview</h2>
+
+<div class="chart-container">
+    <canvas id="skillChart"></canvas>
+</div>
+
+</section>
+
+
+<section class="glass">
+
+<h2>Tools & Technologies</h2>
+
+<div class="tools">
+
+<div class="tool-card">
+Arduino IDE
+</div>
+
+<div class="tool-card">
+VS Code
+</div>
+
+<div class="tool-card">
+Wokwi
+</div>
+
+<div class="tool-card">
+Multimeter
+</div>
+
+<div class="tool-card">
+Solder
+</div>
+
+<div class="tool-card">
+NodeMCU
+</div>
+
+<div class="tool-card">
+ESP32
+</div>
+
+</div>
+
+</section>
+
+
+<section class="glass">
+
+<h2>Project Gallery</h2>
+
+<div class="project-container">
+
+<div class="project-card">
+  <img src="image1.png">
+  <h3>ESP32 Iron Man Repulsor Glove – Smart Gesture Controlled IoT Project</h3>
+  <p>Project ini adalah sistem tangan Iron Man (repulsor glove) berbasis ESP32 yang dirancang untuk simulasi teknologi futuristik. Sistem ini menggunakan mikrokontroler ESP32 untuk mengontrol LED repulsor, sensor (opsional), dan komunikasi nirkabel.
+
+Glove ini dapat dikembangkan untuk kontrol berbasis gesture, web control, atau sistem otomasi IoT sederhana, sehingga cocok sebagai project kombinasi antara embedded system dan creative engineering.</p>
+
+</div>
+
+
+<div class="project-card">
+  <img src="image2.png">
+  <h3>Smart Ignition & Charging Control System berbasis ESP32</h3>
+  <p>Project ini merupakan sistem modifikasi kelistrikan sepeda motor yang mengintegrasikan ESP32 sebagai pusat kontrol untuk mengatur CDI (pengapian) dan kiprok (pengisian aki). Sistem ini dirancang untuk meningkatkan efisiensi, stabilitas tegangan, serta keamanan kelistrikan motor dengan monitoring real-time.</p>
+</div>
+
+</div>
+
+</section>
+<section class="achv-section">
+
+  <!-- NAME -->
+  <div class="achv-name">
+    <h1>FathurDKK</h1>
+    <p>Achievement & Portfolio</p>
+  </div>
+
+  <!-- STATS -->
+  <div class="achv-stats">
+    <div class="achv-stat">🏗️ +5 Projects</div>
+    <div class="achv-stat">🎓 +3 Certificates</div>
+  </div>
+
+  <!-- FILTER -->
+  <div class="achv-filter">
+    <button class="achv-btn achv-active" onclick="achvFilter('all')">All</button>
+    <button class="achv-btn" onclick="achvFilter('project')">Project</button>
+    <button class="achv-btn" onclick="achvFilter('cert')">Certificate</button>
+  </div>
+
+  <!-- TIMELINE -->
+  <div class="achv-line">
+    <div class="achv-item project" onclick="openProject(this)">
+      <span>🚀 2025</span>
+      <h3>Project Wireless Motor</h3>
+      <p>Sistem kontrol motor via NodeMCU</p>
+    </div>
+    <div class="achv-item cert"
+     onclick="openCert('Certificate Web Dev','Lulus / Baik','HTML CSS JS Dasar')">
+  <span>🎓 2025</span>
+  <h3>Certificate Web Development</h3>
+</div>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="achv-modal" id="achvModal">
+  <div class="achv-modal-box">
+    <h2 id="modalTitle"></h2>
+    <h4 id="modalSubtitle"></h4>
+    <p id="modalDesc"></p>
+
+    <button onclick="closeModal()" class="achv-close">Close</button>
+  </div>
+</div>
+<section id="contact" class="glass">
+
+<h2>Contact</h2>
+
+<div class="socials">
+<a href="https://t.me/@Vebdoz">
+<i class="fa-brands fa-telegram"></i>
+</a>
+
+<a href="https://github.com/FaturDKK">
+<i class="fa-brands fa-github"></i>
+</a>
+</div>
+
+</section>
+
+
+<footer>
+
+<h2>Fathurrohman Hakiki</h2>
+
+<p>
+Elektronika Enthusiast � IoT Developer
+</p>
+
+<p>
+Made with  using HTML CSS JavaScript
+</p>
+
+<p>
+� 2026 All Rights Reserved
+</p>
+
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
